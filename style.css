@@ -310,3 +310,66 @@ ol li{
 .allcenter{
   text-align: center;
 }
+
+.side-nav {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  backdrop-filter: blur(4px); 
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 15px;
+  z-index: 100;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.side-nav h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  flex: 0 0 auto;
+}
+
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 2px;
+}
+
+.side-nav ul li {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+}
+
+.side-nav ul li a {
+  color: #E8E8E8;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.side-nav ul li a:hover {
+  color: lightblue;
+  background: rgba(255, 255, 255, 0.1);
+}
