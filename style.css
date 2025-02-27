@@ -1,0 +1,312 @@
+body{
+  font-family: "Segoe UI", sans-serif;
+  background-color: black;
+  background-image: url(img/windowsvistaaurora.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  margin: 10px;
+}
+
+.detail{
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.imgspc {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.profile img {
+  width: 42px; 
+  height: 42px;
+  border-radius: 50%; 
+}
+
+.profile p {
+  color: #E8E8E8;
+  font-size: 16px; 
+  font-weight:400;
+  margin: 0; 
+}
+
+nav {
+  display: flex;
+  margin-left: auto; 
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #E8E8E8;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+nav ul li a:hover {
+  color: #E8E8E8;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+  color: #E8E8E8;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+h2{
+  font-size: 32px;
+  text-align: center;
+  color: #E8E8E8;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 24px;
+  color: #E8E8E8;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  margin-bottom: 1px;
+  font-weight: 500;
+  margin-left: 10px; 
+  margin-right: 10px;
+}
+
+h4{
+  color: #E8E8E8;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  font-size: 20px;
+  margin-bottom: 1px;
+  font-weight: 500;
+  margin-left: 10px; 
+  margin-right: 10px;
+}
+
+h5{
+  color: #E8E8E8;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  margin-bottom: 1px;
+  font-weight: 500;
+  margin-left: 10px; 
+  margin-right: 10px;
+}
+
+details summary {
+  color: #E8E8E8;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  font-weight: 500;
+  list-style: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+p{
+  margin-left: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 14px;
+  color: #E8E8E8;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  }
+
+a {
+  color: salmon;
+  text-decoration: none;
+}
+
+img {
+  margin-left: 10px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.end{
+  font-weight: 500;
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+strong{
+  font-weight: 500;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+address{
+  margin-left: 10px;
+}
+
+.flex-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container > img{
+  border: 1px solid black;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.flex-container > img:hover {
+  transform: scale(1.05);
+}
+
+.flex-container > img:nth-child(3n+1) {
+  transform: rotate(-2deg);
+  box-shadow: 0 4px 12px rgba(0,150,255,0.3);
+}
+
+.flex-container > img:nth-child(3n+2) {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(255,150,0,0.3);
+}
+
+.flex-container > img:nth-child(3n) {
+  transform: rotate(2deg);
+  box-shadow: 0 4px 12px rgba(0,255,150,0.3);
+}
+
+.flex-container > img:hover {
+  transform: scale(1.1) rotate(0deg) translateY(0);
+  box-shadow: 0 8px 24px rgba(255,255,255,0.4);
+  z-index: 1;
+}
+
+ul{
+  list-style-image: url("img/windows-7-icon.png");
+}
+
+ul li{
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #E8E8E8;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+ol li{
+  margin-left: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  color: #E8E8E8;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.skip-link {
+  color: #E8E8E8;
+  text-decoration: none;
+  margin: 10px;
+  padding-top: auto;
+  padding-bottom: auto;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.skip-link:hover{
+  color: lightblue;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.top-buttons img {
+    width: 32px;
+    height: 32px;
+}
+
+#center{
+  text-align: center;
+}
+
+.timeline{
+  list-style-type: upper-roman;
+  font-size: 20px;
+}
+
+.allcenter{
+  text-align: center;
+}
