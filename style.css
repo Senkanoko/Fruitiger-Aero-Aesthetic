@@ -110,6 +110,7 @@ h1{
   color: #E8E8E8;
   font-weight: 500;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  animation: rainbow 8s linear infinite;
 }
 
 h2{
@@ -345,7 +346,7 @@ ol li{
 
 .side-nav h4 {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 20px;
   flex: 0 0 auto;
@@ -386,7 +387,6 @@ ol li{
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* Submenu styling */
 .has-submenu {
   position: relative;
 }
@@ -449,4 +449,14 @@ ol li{
   margin: 1px;
   min-height: calc(100vh - 50px);
   width: auto;
+}
+
+@keyframes rainbow {
+  0% { color: #ff0000; }
+  17% { color: #ff00ff; }
+  33% { color: #0000ff; }
+  50% { color: #00ffff; }
+  67% { color: #00ff00; }
+  83% { color: #ffff00; }
+  100% { color: #ff0000; }
 }
